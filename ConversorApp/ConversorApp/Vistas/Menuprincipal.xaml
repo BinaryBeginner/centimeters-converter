@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConversorApp.Vistas.Menuprincipal"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        
+        <StackLayout 
+            BackgroundColor="#FEE6B9">
+            
+            <Label Text="Conversor" 
+                   TextColor="Black"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   Margin="20"
+                   HorizontalOptions="Center"/>
+            
+            <Frame VerticalOptions="FillAndExpand" 
+                   Margin="15,20,15,20"
+                   CornerRadius="15"
+                   HasShadow="True" >
+
+                <StackLayout VerticalOptions="Center"
+                             Spacing="20">
+                    <Image Source="https://www.multiexpress.com.co/wp-content/uploads/2023/02/490.jpg"/>
+                    <Label Text="Cm a (m)"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="20"/>
+                    <Button Text="Iniciar" 
+                            TextTransform="Uppercase"
+                            CornerRadius="10"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            x:Name="btiniciar"
+                            Clicked="Btiniciar_clicked"/>
+                </StackLayout>
+                
+            </Frame>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
